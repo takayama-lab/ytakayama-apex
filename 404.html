@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>移転しました | 都市システム科学研究室</title>
+<meta name="robots" content="noindex">
+<style>
+  body { margin: 0; font-family: "Helvetica Neue", "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+         color: #333; background: #f8f8f8; line-height: 1.9; }
+  main { max-width: 640px; margin: 0 auto; padding: 80px 24px; }
+  h1 { font-size: 20px; color: #1a3550; margin: 0 0 16px; }
+  a { color: #1a5276; word-break: break-all; }
+</style>
+<script>
+  // 個別ページ（/member/poster/*.pdf など）への古いリンクを、同じパスのまま
+  // 新しいアドレスへ送る。GitHub Pages はサーバ側の転送を持たないため JS で行う。
+  (function () {
+    var to = "https://lab.ytakayama.com" + location.pathname + location.search + location.hash;
+    document.addEventListener("DOMContentLoaded", function () {
+      var a = document.getElementById("to");
+      a.href = to; a.textContent = to;
+    });
+    location.replace(to);
+  })();
+</script>
+</head>
+<body>
+<main>
+  <h1>都市システム科学研究室のサイトは移転しました</h1>
+  <p>新しいアドレスへ移動します。自動で移動しない場合は
+     <a id="to" href="https://lab.ytakayama.com/">https://lab.ytakayama.com/</a> をクリックしてください。</p>
+</main>
+</body>
+</html>
